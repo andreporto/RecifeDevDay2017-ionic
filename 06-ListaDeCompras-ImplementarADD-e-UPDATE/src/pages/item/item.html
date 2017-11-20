@@ -1,0 +1,30 @@
+
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Item</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Nome</ion-label>
+      <ion-input type="text" [(ngModel)]="item.nome"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Unidade</ion-label>
+      <ion-input type="text" [(ngModel)]="item.unidade"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Quantidade</ion-label>
+      <ion-input type="number" [(ngModel)]="item.quantidade"></ion-input>
+    </ion-item>
+  </ion-list>
+  <button ion-button round (click)="onCancelar()" color="danger">Cancelar</button>
+  <button ion-button round (click)="onSalvar()">Salvar</button>
+
+</ion-content>
